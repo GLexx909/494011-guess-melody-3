@@ -2,7 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './components/app/app';
 
-const errors = `Some errors. I don't know where I was supposed to get them from...`;
+const getRandomInt = (max) => {
+  return Math.floor(Math.random() * Math.floor(max));
+};
+
+const errors = getRandomInt(10);
 
 ReactDOM.render(
     <App errors={errors}/>,
