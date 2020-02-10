@@ -2,9 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './components/app/app';
 
-const ERRORS = 3;
+const ERRORS_COUNT = 3;
 
 ReactDOM.render(
-    <App errors={ERRORS}/>,
+    <App errors={ERRORS_COUNT}/>,
     document.getElementById(`root`)
 );
