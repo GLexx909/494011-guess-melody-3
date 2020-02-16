@@ -1,6 +1,6 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-{ /* eslint-disable-next-line react/prop-types        */ }
 const WelcomeScreen = ({errors}) => (
   <section className="welcome">
     <div className="welcome__logo"><img src="img/melody-logo.png" alt="Угадай мелодию" width="186" height="83" /></div>
@@ -14,5 +14,13 @@ const WelcomeScreen = ({errors}) => (
     <p className="welcome__text">Удачи!</p>
   </section>
 );
+
+WelcomeScreen.propTypes = {
+  errors: PropTypes.number
+};
+
+WelcomeScreen.defaultProps = {
+  errors: 0
+};
 
 export default WelcomeScreen;
