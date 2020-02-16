@@ -19,4 +19,8 @@ WelcomeScreen.propTypes = {
   errors: PropTypes.number
 };
 
+WelcomeScreen.defaultProps = {
+  errors: 0
+};
+
 export default WelcomeScreen;
