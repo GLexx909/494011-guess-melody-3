@@ -2,7 +2,7 @@ import React from 'react';
 import WelcomeScreen from "../welcome-screen/welcome-screen";
 import PropTypes from "prop-types";
 
-const App = ({errors}) => <WelcomeScreen errors={errors}/>;
+const App = ({errors}) => <WelcomeScreen errors={errors} onWelcomeButtonClick={() => `true`}/>;
 
 App.propTypes = {
   errors: PropTypes.number
