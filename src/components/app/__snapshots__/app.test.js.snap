@@ -42,7 +42,7 @@ exports[`<App/> should render component 1`] = `
     </li>
     <li>
       Можно допустить 
-      3
+      0
        ошибки.
     </li>
   </ul>
