@@ -7,7 +7,7 @@ const errors = 3;
 it(`<WelcomeScreen/> should render component`, () => {
   const tree = renderer
     .create(
-        <WelcomeScreen errors={errors}/>
+        <WelcomeScreen errors={errors} onWelcomeButtonClick={() => {}}/>
     ).toJSON();
 
   expect(tree).toMatchSnapshot();
