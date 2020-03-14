@@ -39,6 +39,7 @@ it(`When user answers genre question form is not sent`, () => {
       <QuestionGenre
         onAnswer={onAnswer}
         question={question}
+        renderPlayer={() => {}}
       />);
 
   const form = questionGenre.find(`form`);
@@ -60,6 +61,7 @@ it(`User answer passed to callback is consistent with "userAnswer" prop`, () => 
       <QuestionGenre
         onAnswer={onAnswer}
         question={question}
+        renderPlayer={() => {}}
       />);
 
   const form = questionGenre.find(`form`);

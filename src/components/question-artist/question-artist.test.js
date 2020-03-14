@@ -21,12 +21,17 @@ const question = {
   }],
 };
 
-it(`QuestionArtist is rendered correctly`, () => {
+it(`ArtistQuestionScreen is rendered correctly`, () => {
   const tree = renderer.create(
       <QuestionArtist
         question={question}
         onAnswer={() => {}}
-      />
+        renderPlayer={() => {}}
+      />, {
+        createNodeMock: () => {
+          return {};
+        }
+      }
   ).toJSON();
 
   expect(tree).toMatchSnapshot();
